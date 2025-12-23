@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authorized Money Changer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #2E8B57; /* Hijau seperti pada gambar */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        
+
+        .header h1 {
+            margin: 0;
+            font-size: 17px;
+            font-weight: normal;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin:  7px;
+            width: 29px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            color: black;
+            text-decoration: none;
+        }
+
+        /* Dropdown Styling */
+        .dropdown {
+            position: absolute;
+            bottom: 1px;
+            left: 50%; /* Pusatkan horizontal */
+            transform: translateX(-50%); /* Koreksi posisi tengah */
+        }
+
+        .dropdown-button {
+            background-color: transparent;
+            color: white;
+            padding: 5px 10px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-button img {
+            margin-right: 5px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            left: 50%; /* Pusatkan horizontal */
+            transform: translateX(-50%); /* Koreksi posisi tengah */
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .flag {
+            width: 24px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        
+        <h1>Authorized Money Changer</h1>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" class="flag">
+                EN <i class="fas fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="English" class="flag">
+                    EN
+                </a>
+                <a href="#">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="Indonesia" class="flag">
+                    ID
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Konten lainnya di sini -->
+
+</body>
+</html>
+
+    
+
+    <script>
+        function toggleMenu() {
+            // Fungsi ini bisa diperluas untuk menampilkan menu yang lebih kompleks
+            alert('Menu diklik!');
+        }
+    </script>
+</body>
+</html>
+
+    <main class="content-area">
+        <section class="rate-info">
+            <h2 class="area-title"><span style="color: #00FF00;">AREA </span>  DKI JAKARTA & BANTEN</h2>
+            <p class="last-update">Update Harga Terakhir :<span style="color: #FF0000;">12 Dec 2025 15:08:19</span></p>
+
+            <div class="general-notice">
+                <p>BERIKUT ADALAH KURS YANG BERLAKU, UNTUK BEBERAPA MATA UANG TERDAPAT PERBEDAAN HARGA BERDASARKAN DENOMINASI. UNTUK BEBERAPA VALAS VERSI LAMA SUDAH TIDAK DAPAT KAMI TERIMA LAGI. SETELAH DILAKUKAN PENGECELAN (PENGECELAN MESIN, PENGECELAN UV, DAN PENGECELAN MANUAL), DAPAT DIBERLAKUKAN POTONGAN HARGA SESUAI DENGAN FISIK DAN KONDISI VALAS.</p>
+                <p>APABILA SUDAH TERJADI KESEPAKATAN/KONFIRMASI TRANSAKSI, MAKA KURS YANG BERLAKU SETELAH KESEPAKATAN/KONFIRMASI TRANSAKSI TIDAK AKAN BERPENGARUH KE TRANSAKSI YANG TERJADI BAIK KURS TERSEBUT MENGALAMI KENAIKAN/PENURUNAN.</p>
+            </div>
+            <div class="currency-table-container">
+                <table class="currency-table">
+                    <thead>
+                        <tr>
+                            <th>Mata Uang</th>
+                            <th>Denominasi</th>
+                            <th class="rate-beli">Rate Beli<br><small>*Customer sell to Smartdeal</small></th>
+                            <th class="rate-jual">Rate Jual<br><small>*Customer buy from Smartdeal</small></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="currency-name"><span class="flag">🇺🇸</span> USD</td>
+                            <td>100-50</td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">16.695,00</span></p</td>
+                            <td class="rate-jual-value"><span style="color: #00FF00;">16.840,00</span></p</td>
+                        </tr>
+                        <tr>
+                            <td class="currency-name"></td>
+                            <td>20-5</td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">16.575,00</span></p></td>
+                            <td class="rate-jual-value"> <span style="color: #00FF00;">16.840,00</span></p></td>
+                        </tr>
+                        <tr>
+                            <td class="currency-name"><span class="flag">🇪🇺</span> EUR</td>
+                            <td>500</td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">19.500,00</span></p></td>
+                            <td class="rate-jual-value"><span style="color: #00FF00;">19.705,00</span></p></td>
+                        </tr>
+                        <tr>
+                            <td class="currency-name"></td>
+                            <td>200,100,50</td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">19.500,00</span></p></td>
+                            <td class="rate-jual-value"> <span style="color: #00FF00;">19.590,00</span></p></td>
+                        </tr>
+                        <tr>
+                        <td class="currency-name"><span class="flag">🇨🇰</span>AUD</td>
+<td>100-50</td>
+<td class="rate-beli-value"><span style="color: #FF0000;">11.065,00</span></p></td>
+<td class="rate-jual-value"><span style="color: #00FF00;">11.145,00</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇦🇨</span>NZD</td>
+<td>100-50</td>
+<td class="rate-beli-value"><span style="color: #FF0000;">9.675,00</span></p></td>
+<td class="rate-jual-value"><span style="color: #00FF00;">9.810,00</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇨🇦</span>CAD</td>
+<td>  </td>
+<td class="rate-beli-value"><span style="color: #FF0000;">12.040,00</span></p></td>
+<td class="rate-jual-value"><span style="color: #00FF00;">12.175,00</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇨🇭</span>CHF</td>
+<td>1.000-100 </td>
+<td class="rate-beli-value"><span style="color: #FF0000;">20.950,00</span></p></td>
+<td class="rate-jual-value"><span style="color: #00FF00;">21.135,00</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇬🇧</span>GBP</td>
+<td>50-20 </td>
+<td class="rate-beli-value"><span style="color: #FF0000;">22.310,00</span></p></td>
+<td class="rate-jual-value"><span style="color: #00FF00;">22.985,00</span></p></td>
+</tr>
+                            <td class="currency-name"><span class="flag">🇯🇵</span> JPY</td>
+                            <td></td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">107,00</span></p></td>
+                            <td class="rate-jual-value"><span style="color: #00FF00;">108,30</span></p></td>
+                        </tr>
+                        <tr>
+                            <td class="currency-name"><span class="flag">🇸🇬</span> SGD</td>
+                            <td>100</td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">12.935,00</span></p></td>
+                            <td class="rate-jual-value"><span style="color: #00FF00;">12.985,00</span></p></td>
+                        </tr>
+  <tr>
+<td class="currency-name"><span class="flag">🇧🇳</span>BND</td>
+<td>1.000-50</td>
+<td class="rate-beli-value"><span style="color: #FF0000;">12.915,00</span></p></td>
+<td class="rate-jual-value"><span style="color: #00FF00;">12.965,00</span></p></td>
+</tr>
+<tr>
+                  
+                  
+                        
+                            <td class="currency-name"><span class="flag">🇦🇪</span> AED</td>
+                            <td>1.000</td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">4.538,00</span></p></td>
+                            <td class="rate-jual-value"><span style="color: #00FF00;">4.580,00</span></p></td>
+                        </tr>
+<tr>
+<td
+class="currency-name"><span class="flag">🇱🇷</span>MYR</td>
+<td>100-50</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">4.105,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">4.135,00</span></p></td>
+</tr>
+<tr>
+<td
+class="currency-name"><span class="flag">🇹🇭</span>THB</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">531,50</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">535,50</span></p></td>
+</tr>
+<tr>
+<td
+class="currency-name"><span class="flag">🇭🇰</span>HKD</td>
+<td>1.000-500</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">2.164,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">2.177,00</span></p></td>
+</tr>
+<tr>
+<td
+class="currency-name"><span class="flag">🇨🇳</span>CNY</td>
+<td>100 </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">2.392,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">2.413,00</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇹🇼</span>TWD</td>
+<td>2.000-500</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">540,25</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">547,00</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇰🇷</span>KRW</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">11,28</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">11,50</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇵🇭</span>PHP</td>
+<td>1.000-500 </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">283,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">296,00</span></p></td>
+</tr>
+<tr>
+<td
+class="currency-name"><span class="flag">🇮🇳</span> INR </td>
+<td>  500 </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">179,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">191,00</span></p></td>
+</tr>
+<tr>
+<td
+class="currency-name"><span class="flag">🇻🇳</span>VND</td>
+<td>500.000-100.000</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">0,60</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">0,645</span></p></td>
+</tr>
+<tr>
+<td class="currency-name"><span class="flag">🇸🇦</span>SAR</td>
+<td>500 </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">4.463,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">4.507,00</span></p></td>
+</tr>
+ <tr> 
+<td class="currency-name"></td>
+                            <td>100</td>
+                            <td class="rate-beli-value"><span style="color: #FF0000;">4.463,00</span></p></td>
+                            <td class="rate-jual-value"> <span style="color: #00FF00;">4.542,00</span></p></td>
+                        </tr>
+                        <tr>
+<td class="currency-name"></td>
+                            <td>50</td>
+                            <td class="rate-beli-value"><span style="color: #ff0000;">4.463,00</span></p></td>
+                            <td class="rate-jual-value"> <span style="color: #00ff00;">4.552,00</span></p></td>
+                        </tr>
+                        <tr>
+<td class="currency-name"></td>
+                            <td>10</td>
+                            <td class="rate-beli-value"><span style="color: #ff0000;">4.468,00</span></p></td>
+                            <td class="rate-jual-value"> <span style="color: #00ff00;">4.717,00</span></p></td>
+                        </tr>
+                        <tr>
+<td class="currency-name"></td>
+                            <td>5</td>
+                            <td class="rate-beli-value"><span style="color: #ff0000;">4.468,00</span></p></td>
+                            <td class="rate-jual-value"> <span style="color: #00ff00;">4.727,00</span></p></td>
+                        </tr>
+                        <tr>
+                          <td
+class="currency-name"><span class="flag">🇦🇪</span>AED</td>
+<td>1.000</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">4.561,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">4.600,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇶🇦</span>QAR</td>
+<td>500-50</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">4.530,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">4.600,00 </span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇲🇹</span>BHD</td>
+<td>20-5</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">43.775,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;"> 44.525,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇲🇻</span>OMR</td>
+<td>50-5</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">42.925,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">  43.675,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇰🇼</span>KWD</td>
+<td>20-5</td>
+<td class="rate-beli-value"><span style="color:#FF0000;"> 53.500,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">  54.450,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇪🇭</span>JOD</td>
+<td>50-10</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">  23.250,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">   23.625,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇹🇷</span>TRY</td>
+<td>200-100</td>
+<td class="rate-beli-value"><span style="color:#FF0000;">  380,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">   425,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇮🇶</span>IQD</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">  8,80 </span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">   12,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇸🇪</span>SEK</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">	1.525,00 </span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">   1.895,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇧🇻</span>NOK</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">		1.475,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">    1.730,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇩🇰</span>DKK</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">		2.455,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">    2.745,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇷🇺</span>RUB</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">		179,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">    245,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇲🇿</span>ZAR</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">				960,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">    1.055,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇲🇴</span>MOP</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">				 2.065,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">    2.175,00</span></p></td>
+</tr>
+<tr>
+  <td
+class="currency-name"><span class="flag">🇰🇭</span>KHR</td>
+<td> </td>
+<td class="rate-beli-value"><span style="color:#FF0000;">				 	2,00</span></p></td>
+<td class="rate-jual-value"><span style="color:#00FF00;">    - </span></p></td>
+</tr>
+<tr>
+                          
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="bottom-nav">
+        <div class="nav-item">□</div>
+        <div class="nav-item">○</div>
+        <div class="nav-item">△</div>
+    </footer>
+</body>
+</html>
+
+    <style>
+        /* CSS untuk meniru tampilan */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            
+            background-color: #121212; /* Latar belakang gelap */
+            color: #fff; /* Warna teks putih */
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px; /* Lebar maksimum konten */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .logo {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 200px; /* Ukuran logo */
+        }
+
+        .tagline {
+            font-size: 1em;
+            color: #aaa;
+            margin-bottom: 30px;
+        }
+
+        .more-links h2 {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .more-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .more-links li {
+            margin-bottom: 10px;
+        }
+
+        .more-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-media {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .information {
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .information button {
+            background-color: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        </div>
+        <div class="tagline">
+            Your Smartest Exchange & Remittance Partners.
+        </div>
+
+        <div class="more-links">
+            <h2>More Links</h2>
+            <ul>
+                <li><a href="#">→ Home</a></li>
+                <li><a href="#">→ Services</a></li>
+                <li><a href="#">→ Blogs</a></li>
+                <li><a href="#">→ Market Update</a></li>
+                <li><a href="#">→ Members</a></li>
+                <li><a href="#">→ Contact Us</a></li>
+                <li><a href="#">→ Terms & Condition</a></li>
+                <li><a href="#">→ Privacy Policy</a></li>
+                <li><a href="#">→ FAQ</a></li>
+            </ul>
+        </div>
+        <div class="social-media">
+         <h1>Social Media</h1>
+         <hr>
+         <div class="social-icons">
+        
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropdown-button">
+        </div>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartdeal - Information</title>
+    <style>
+        /* CSS untuk meniru tampilan */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Latar belakang gelap */
+            color: #fff; /* Warna teks putih */
+            line-height: 1.4;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Lebar maksimum konten */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section-title {
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+
+        .social-media {
+            margin-bottom: 20px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            background-color: #333; /* Latar belakang tombol */
+            padding: 8px 12px; /* Padding tombol */
+            border-radius: 5px; /* Sudut membulat */
+        }
+
+        .information {
+            margin-bottom: 20px;
+        }
+
+        .information p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .information p img {
+            margin-right: 10px;
+            width: 20px; /* Ukuran ikon */
+            height: 20px;
+        }
+
+        .copyright {
+            text-align: center;
+            padding: 20px;
+            background-color: #228B22; /* Hijau tua */
+        }
+
+        .copyright p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+
+        <div class="section-title">Information</div>
+        <div class="information">
+            <p><img src="URL_IKON_TELEPON" alt="Telepon">(+62) 21 630 5210</p>
+            <p><img src="URL_IKON_EMAIL" alt="Email">info@smartdeal.co.id</p>
+            <p><img src="URL_IKON_JAM" alt="Jam">Mon to Fri - 09:00 to 16:30</p>
+            <p><img src="URL_IKON_KANTOR" alt="Kantor">Head Office<br>
+               Smartdeal Building,<br>
+               Jl. Cideng Timur 16A Gambir Petojo Utara, Jakarta Pusat</p>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © 2018. Smartdeal</p>
+        <p>Powered By PT. Smart Sarana Telekomunikasi</p>
+    </div>
+</body>
+</html>
+        <div class="information">
+            <button>^</button>
+        </div>
+    </div>
+</body>
+</html>
