@@ -1,2 +1,2 @@
-# Money-changger
-Money changger website
+# beautiful.html
+Money is beautiful
